@@ -31,7 +31,7 @@ req = datetime(year, month, day, hour, minute, second)
 now = datetime.now()
 
 while req>now:
-    # Clear screen upon launching applet
+    # Clear terminal screen upon launching applet
     os.system('cls||clear')
     print("%dd %dh %dm %ds" % daysHoursMinutesSecondsFromSeconds(dateDiffInSeconds(now, req)))
     sleep(1)
